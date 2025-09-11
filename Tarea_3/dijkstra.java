@@ -1,8 +1,7 @@
-
+package Tarea_3;
 import java.util.*;
 
 public class dijkstra {
-
     // Arista: destino y peso
     static class Edge { 
         int to, w; 
@@ -62,7 +61,6 @@ public class dijkstra {
         List<List<Edge>> g = new ArrayList<>();
         for(int i = 0; i < n; i++) g.add(new ArrayList<>());
 
-        
         g.get(0).add(new Edge(1, 2));
         g.get(0).add(new Edge(2, 9));
         g.get(1).add(new Edge(2, 2));
